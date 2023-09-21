@@ -58,3 +58,18 @@ function negate(){
 
     document.getElementById("math7").innerHTML = "10 negated is " + (-x)
 }
+
+document.getElementById("btn8").addEventListener("click", incrament);
+function incrament(){
+    let x = 0;
+
+    document.getElementById("math8").innerHTML = ++x;
+}
+
+document.getElementById("btn9").addEventListener("click", decrament);
+function decrament(){
+    
+    let x = 0;
+
+    document.getElementById("math9").innerHTML = --x;
+}
