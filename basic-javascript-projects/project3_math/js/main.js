@@ -73,3 +73,12 @@ function decrament(){
 
     document.getElementById("math9").innerHTML = --x;
 }
+
+document.getElementById("btn10").addEventListener("click", random);
+function random(){
+
+    let x = Math.random();
+
+    document.getElementById("math10").innerHTML = "This is a random number: " + x;
+    document.getElementById("math11").innerHTML = "This is the random number multiplied by 100: " + (x * 100);
+}
