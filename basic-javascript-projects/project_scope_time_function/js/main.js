@@ -63,3 +63,4 @@ function time_day(){
 
     document.getElementById("time-day").innerHTML = reply + " Its 00" + Time;
 }
+
