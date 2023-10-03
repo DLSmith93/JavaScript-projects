@@ -36,3 +36,17 @@ function search(){
 
     document.getElementById("result").innerHTML = "The position of the word you searched for is " + position;
 }
+
+document.getElementById("num-string").addEventListener("click", num_string);
+function num_string(){
+
+    let num1 = 182;
+    let num2 = 12938.3012987376112;
+    let num3 = 165.354;
+    let text = "Hello";
+
+    document.getElementById("string1"). innerHTML = num1.toString();
+    document.getElementById("num1").innerHTML = num2.toPrecision();
+    document.getElementById("fixed").innerHTML = num3.toFixed(10);
+    document.getElementById("value-of").innerHTML = text.valueOf();
+}
