@@ -26,7 +26,7 @@ function for_loop(){
 
     let instrument = ["Guitar", "Piano", "Drums", "Bass", "Fiddle", "Banjo"];
     let content = "";
-    for(i = 0; i < instrument.length; ++i){
+    for(let i = 0; i < instrument.length; ++i){
         content += instrument[i] + "<br>";
     }
     document.getElementById("iteration2").innerHTML = content;
@@ -80,4 +80,37 @@ function break_continue(){
 
     document.getElementById("break-output1").innerHTML = text1;
     document.getElementById("break-output2").innerHTML = text2;
+}
+
+document.getElementById("submit-color").addEventListener("click", color_function);
+function color_function(){
+
+    let color_output = "";
+
+    let colors = document.getElementById("color-input").value;
+    let color_string = " is a great color!";
+    switch(colors){
+        case "Red": 
+            color_output = "Red" + color_string;
+        break;
+        case "Blue": 
+            color_output = "Blue" + color_string;
+        break;
+        case "Green": 
+            color_output = "Green" + color_string;
+        break;
+        case "Yellow": 
+            color_output = "Yellow" + color_string;
+        break;
+        case "Pink": 
+            color_output = "Pink" + color_string;
+        break;
+        case "Purple": 
+            color_output = "Purple" + color_string;
+        break;
+        default: 
+            color_output = "Please enter a color exactly as theya re spelled above."
+    }
+
+    document.getElementById("color-output").innerHTML = color_output;
 }
