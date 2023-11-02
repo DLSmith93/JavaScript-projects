@@ -114,3 +114,43 @@ function color_function(){
 
     document.getElementById("color-output").innerHTML = color_output;
 }
+
+function hello_world(){
+
+    let a = document.getElementsByClassName("click");
+    a[0].innerHTML = "The text has changed!"
+}
+
+document.getElementById("ID_Name").addEventListener("mouseover", graphics, gradiant);
+function graphics(){
+
+    var c = document.getElementById("ID_Name");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    var c = document.getElementById("ID_Name");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(500, 250);
+    ctx.stroke();
+
+    
+}
+
+document.getElementById("ID_Name").addEventListener("mouseover", gradiant);
+function gradiant(){
+
+    const canvas = document.getElementById("ID_Name");
+    const ctx = canvas.getContext("2d");
+
+    // Create a Gradient
+    const grd = ctx.createLinearGradient(0, 0, 170, 0);
+    grd.addColorStop(0, "black");
+    grd.addColorStop(1, "white");
+
+    // Draw a filled Rectangle
+    ctx.fillStyle = grd;
+    ctx.fillRect(20, 100, 150, 100);
+}
